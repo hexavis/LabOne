@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, intial-scale=1" />
 
     <title>Lab one with Bootstrap</title>
+    <link href="Content/main.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
 </head>
@@ -24,6 +25,7 @@
 
             <form id="form1" runat="server">
                 <div class="col-md-6">
+
                     <div class="input-group">
                         <span class="input-group-addon" id="basic-addon1">
                             <label for="name">Name: </label>
@@ -31,12 +33,16 @@
                         <asp:TextBox CssClass="form-control" ID="TextBoxName" runat="server"></asp:TextBox>
                     </div>
 
+                    <!-- This is to allow a space between sections -->
+                    <div class="divider"></div>
                     <div class="input-group">
                         <span class="input-group-addon" id="basic-addon2">
                             <label for="password">Password: </label>
                         </span>
                         <asp:TextBox CssClass="form-control" ID="TextBoxPW" runat="server" TextMode="Password"></asp:TextBox>
                     </div>
+
+                    <div class="divider"></div>
                     <div class="input-group">
                         <span class="input-group-addon" id="basic-addon3">
                             <label for="address">Address: </label>
@@ -44,6 +50,7 @@
                         <asp:TextBox CssClass="form-control" ID="TextBoxAddress" runat="server" TextMode="MultiLine"></asp:TextBox>
                     </div>
 
+                    <div class="divider"></div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <label for="gradlevel">Please pick your highest grade level: </label>
@@ -96,26 +103,28 @@
                 <!--This is all the labels for after the submit button -->
 
                 <div class="col-md-4">
-                    <div>
-                        <asp:Label ID="endName" runat="server" />
-                    </div>
-                    <div>
-                        <asp:Label ID="endPW" runat="server" />
-                    </div>
-                    <div>
-                        <asp:Label ID="endAddress" runat="server" />
-                    </div>
-                    <div>
-                        <asp:Label ID="endGrad" runat="server" />
-                    </div>
-                    <div>
-                        <asp:Label ID="endLaptop" runat="server" />
-                    </div>
-                    <div>
-                        <asp:Label ID="endSkills" runat="server" />
-                    </div>
-                    <div>
-                        <asp:Label ID="endProvince" runat="server" />
+                    <div class="well well-sm">
+                        <div>
+                            <asp:Label ID="endName" runat="server" />
+                        </div>
+                        <div>
+                            <asp:Label ID="endPW" runat="server" />
+                        </div>
+                        <div>
+                            <asp:Label ID="endAddress" runat="server" />
+                        </div>
+                        <div>
+                            <asp:Label ID="endGrad" runat="server" />
+                        </div>
+                        <div>
+                            <asp:Label ID="endLaptop" runat="server" />
+                        </div>
+                        <div>
+                            <asp:Label ID="endSkills" runat="server" />
+                        </div>
+                        <div>
+                            <asp:Label ID="endProvince" runat="server" />
+                        </div>
                     </div>
                 </div>
                 <!-- end col-md-4 -->
